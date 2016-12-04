@@ -23,7 +23,7 @@ public class Exo15_1 {
         System.out.println("Entrer le diviseur");
         lire.nextLine();
         System.out.println("le resultat est ");
-        System.out.println(division(x, y));
+        System.out.println(division(x, y));   // dans l'appel je reçois toujours un zéro j'ai pas compris pourquoi ??
         try {
             System.out.println(+division(x, y));
         }catch(ArithmeticException ex){
@@ -34,6 +34,6 @@ public class Exo15_1 {
             System.err.println(ex.getMessage());
         }catch (InputMismatchException ex){
             System.err.println("faute de frappe il faut saisir un entier");
-        }
+        } // j'ai mis les exceptions mais ça marche pas ?
     }
 }
